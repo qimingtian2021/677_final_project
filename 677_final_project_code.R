@@ -4,16 +4,6 @@
 # Data: NHEFS complete-case data from the causaldata R package
 ###############################################################################
 
-# 0. Install and load packages ---------------------------------------------
-# If a package is not installed, this code installs it automatically.
-
-required_packages <- c("causaldata", "dplyr", "ggplot2", "sandwich", "lmtest")
-
-for (pkg in required_packages) {
-  if (!requireNamespace(pkg, quietly = TRUE)) {
-    install.packages(pkg)
-  }
-}
 
 library(causaldata)
 library(dplyr)
